@@ -18,3 +18,4 @@ GPIO.output(23, GPIO.HIGH)
 sleep(2)
 GPIO.output(23, GPIO.LOW)
 
+GPIO.cleanup()
