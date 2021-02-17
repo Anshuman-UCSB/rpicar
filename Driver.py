@@ -46,7 +46,7 @@ if __name__ == "__main__":
     driver = Driver(22,23, 17, 27)
     mapping = {}
     try:
-        while true:
+        while True:
             inp = input("Key: ")
             if inp[0] == 'w':
                 driver.forwards()
