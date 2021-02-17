@@ -14,7 +14,7 @@ for pin in pins:
    GPIO.setup(pin, GPIO.OUT)
    GPIO.output(pin, GPIO.LOW)
 
-pins[22]['state'] =GPIO.HIGH
+pins[23]['state'] =GPIO.HIGH
 sleep(2)
-pins[22]['state'] =GPIO.LOW
+pins[23]['state'] =GPIO.LOW
 
