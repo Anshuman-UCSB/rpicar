@@ -41,3 +41,22 @@ class Driver:
         
         self.rf.on()
         self.rb.off()
+
+if __name__ == "__main__":
+    driver = Driver(22,23, 17, 27)
+    mapping = {}
+    try:
+        while true:
+            inp = input("Key: ")
+            if inp[0] == 'w':
+                driver.forwards()
+            elif inp[0] == 'a':
+                driver.left()
+            elif inp[0] == 's':
+                driver.backwards()
+            elif inp[0] == 'd':
+                driver.right()
+            else:
+                driver.stop()
+    except KeyboardInterrupt:
+        driver.stop()
